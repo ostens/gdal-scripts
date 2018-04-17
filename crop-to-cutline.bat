@@ -1,2 +1,3 @@
 echo off
-gdalwarp -cutline "cutline.shp" -csql "select * from cutline where location='1120-B'" -crop_to_cutline -of GTiff -srcnodata -9999 -dstnodata -9999 Karte_1120_2018-02_Geo.tif output.tif
+set "plan=BSH1120-1-2018-02.tif"
+gdalwarp -cutline "cutlines.shp" -csql "select * from cutlines where location='%plan%'" -crop_to_cutline -of GTiff -srcnodata -9999 -dstnodata -9999 BSH1120-0-2018-02.tif %plan%
