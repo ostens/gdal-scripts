@@ -4,8 +4,8 @@ REM Variables expanded at execution time rather than parse time
 setlocal enabledelayedexpansion
 
 REM Source and destination folders
-set oldpath=Q:\Erin\OSGeo4W\in\
-set newpath=Q:\Erin\OSGeo4W\out\
+set oldpath=C:\
+set newpath=C:\
 
 REM count files
 set numFiles=0
