@@ -31,3 +31,4 @@ for /f %%i in ('dir /B %oldpath%*.tif') do (
 	) 
 	set /a count+=1
 )
+echo Finished.
