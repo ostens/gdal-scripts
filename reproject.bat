@@ -18,7 +18,8 @@ echo Number of files to reproject: %numFiles%
  
 set count=1
 
-REM Reproject and compress
+REM Reproject
+REM gdal_translate switches : -q suppress output : LZW compression
 for /f %%i in ('dir /B %oldpath%*.tif') do (
 	echo Starting !count! of %numFiles%	
 	gdalwarp -t_srs EPSG:3857 -q "%oldpath%%%i" "%newpath%temp%%i"	
