@@ -6,3 +6,8 @@ Reprojects all files in a folder to a destination EPSG, then applies LZW compres
 Reports unsuccessful attempts to the command line.
 
 To be used in the OSGeo4W shell.
+
+## interleave-batch
+Used due to problem with FME Geotiff saving options.
+
+To be used in the OSGeo4W shell.
