@@ -21,7 +21,7 @@ set count=1
 REM gdal_translate switches : -q suppress output : LZW compression : INTERLEAVE pixel
 for /f %%i in ('dir /B %oldpath%*.tif') do (
 	echo Starting !count! of %numFiles%	
-	gdal_translate -co "INTERLEAVE=PIXEL" -co "COMPRESS=LZW" "%oldpath%%%i" "%newpath%%%i"
+	gdal_translate -q -co "INTERLEAVE=PIXEL" -co "COMPRESS=LZW" "%oldpath%%%i" "%newpath%%%i"
 	echo interleaved !count! of %numFiles%
 	set /a count+=1
 )
