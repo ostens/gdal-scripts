@@ -9,5 +9,6 @@ To be used in the OSGeo4W shell.
 
 ## interleave-batch
 Used due to problem with FME Geotiff saving options.
+Added to path and run from anywhere on network, with source and destination paths as inputs, eg "interleave.bat C:\Source\ C:\Dest\"
 
 To be used in the OSGeo4W shell.
