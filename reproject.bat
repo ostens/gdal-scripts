@@ -5,7 +5,12 @@ setlocal enabledelayedexpansion
 
 REM Source and destination folders
 set oldpath=C:\
-set newpath=C:\
+set newpath=C:\Reprojected\
+
+if not exist %newpath% mkdir %newpath%
+
+REM add output
+if not exist newpath mkdir newpath
 
 REM count files
 set numFiles=0
